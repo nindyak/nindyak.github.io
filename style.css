@@ -1,0 +1,163 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* styling for the entire webpage */
+  body {
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+      line-height: 1.4em;
+      background-color: #999B84;
+      color: #A2B38B;
+      font-family: monospace;
+  }
+  
+  /* header at the top with the blog name and logo */
+  header {
+      max-width: 100%;
+      background-color: #362706;
+      padding: 25px;    
+      display:flow-root;
+      align-items: flex-end;
+      justify-content: center;
+  }
+  
+  /* heading element for the blog name */
+  h1 {
+      color: #ffffff;
+      font-size: 50px;
+      line-height: 1;
+      font-family: monospace;
+  }
+  
+  
+  /* logo image in the header */
+  header img {
+      max-height: 70px;
+      width: auto;
+      margin-right: 10px;
+      margin-left: 0;
+  }
+  
+  /* heading element for the title of each separate blog post */
+  h2 {
+      font-size: 45px;
+      margin-top: 5px;
+      line-height: 120%;
+      font-family: monospace;
+      color: #ACB992;
+  }
+  
+  /* heading element for the date of each blog post */
+  h3 {
+      font-size: 15px;
+      font-weight: 400;
+      color: #F47C7C;
+      margin-top: -10px;
+      text-decoration: none;
+      text-decoration-color: #464E2E;
+      text-decoration-color: #362706;
+      color: #362706;
+  }
+  p {
+    color: #5F7161;
+  }
+  /* heading element for each blog post */
+  
+  /* images in the blog posts */
+  img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      display: block;
+      margin: auto;
+      width: 80vw;
+  }
+  /* heading element for the image captions */
+  h4 {
+    text-align: center;
+    color: #362706;
+    font-size: 14px;
+    width: auto;
+    margin: 5px 0 0 0;
+    padding: 0;
+  }
+  
+  /* paragraph elements used to write the main blog post text */
+  p {
+      font-size: 15px;
+      border-left: 5px solid #ACB992;
+      padding-left: 15px;
+      margin-top: 30px;
+  }
+  
+  /* the "back to top" links */
+  a {
+      text-decoration: underline;
+      font-size: 16px;
+      display: block;
+      margin-top: 30px;
+      text-align: center;
+      color: #C5D8A4;
+      text-transform: uppercase;
+  }
+  
+  /* styling for the "back to top" link when hovered */
+  a:hover {
+        color: #464E2E;  
+  }
+  
+  /* <div> element that contains all the blog entries */
+  div.container {
+      max-width: 1020px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+  
+  /* <div> element inside parent <div class="container"> element */
+  div.column {
+    display: block;
+      float: left;
+      margin: 1% 0 1% 1.6%;
+      width: 100%;
+  }
+  
+  /* formatting to keep the margins of the sections equal */
+  .column:first-child {
+      margin-left: 0;
+  }
+  
+  /* <div> element to create the container for each separate blog post */
+  div.blog-post {
+      background-color: #ffffff;
+      margin: 0 auto 2em auto;
+      padding: 35px 30px;
+      box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  /* MEDIA QUERIES */
+  
+  /* 900px screens*/
+  @media only screen and (max-width: 56.25em) {
+      .column {
+          margin: 1% 0 1% 0%;
+      }
+  }
+  
+  /* 685px screens */
+  @media only screen and (max-width: 42.813em) {
+      h2 {
+          font-size: 1.95em;
+      }
+      h3 {
+          font-size: .9em;
+      }
+  }
+  
+  /* 380px screens */
+  @media only screen and (max-width: 23.75em) {
+      p {
+          font-size: .9em;
+      }
